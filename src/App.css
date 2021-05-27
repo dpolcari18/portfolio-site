@@ -37,12 +37,8 @@
   }
 }
 
-.parent {
-  position: fixed;
-  top: 54px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  pointer-events: none;
+#headshot {
+  height: 745px;
+  width: 720px;
+  border-radius: 50px;
 }
