@@ -4,11 +4,13 @@ import './App.css';
 import 'semantic-ui-css/semantic.min.css'
 
 import Home from './containers/Home'
+import NavBar from './containers/NavBar'
 
 function App() {
 
   return (
     <Router>
+      <NavBar />
       <Route path='/resume' 
              component={Home} 
              onEnter={() => document.getElementById('resume_id').scrollIntoView()}
@@ -29,7 +31,7 @@ function App() {
              component={Home} 
              onEnter={() => document.getElementById('about_id').scrollIntoView()}
       />
-      <Route path='/' 
+      <Route exact path='/' 
              component={Home} 
              onEnter={() => document.getElementById('home_id').scrollIntoView()}
       />

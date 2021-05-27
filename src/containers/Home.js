@@ -10,7 +10,6 @@ import Resume from './Resume'
 const Home = () => {
     return (
         <div id='home'>
-            <NavBar />
             <About />
             <Portfolio />
             <Blog />
