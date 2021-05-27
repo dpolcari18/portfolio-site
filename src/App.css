@@ -37,6 +37,15 @@
   }
 }
 
+.parent {
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  top: 40px;
+  left: 0
+}
+
 #headshot {
   height: 745px;
   width: 720px;

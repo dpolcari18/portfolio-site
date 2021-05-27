@@ -16,7 +16,7 @@ const NavBar = () => {
     }
 
     return (
-        <Menu secondary>
+        <Menu secondary fixed='top'>
             <Menu.Item 
                 name='Home'
                 active={active === 'Home'}
