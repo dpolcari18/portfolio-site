@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 
 // semantic ui
 import { Menu } from 'semantic-ui-react'
@@ -18,8 +18,6 @@ const NavBar = () => {
 
     const handleObserve = (el) => {
         setActive(el[0].target.id)
-        console.log(el[0].target.id)
-        // debugger
     }
 
     useEffect (() => {
