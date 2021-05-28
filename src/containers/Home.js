@@ -10,7 +10,7 @@ import Resume from './Resume'
 
 const Home = () => {
     return (
-        <div id='home' className='parent'>
+        <div id='home'>
             <Greeting />
             <About />
             <Portfolio />
