@@ -6,7 +6,7 @@ import 'semantic-ui-css/semantic.min.css'
 import Home from './containers/Home'
 import NavBar from './containers/NavBar'
 
-function App() {
+function App() {  
 
   return (
        <>

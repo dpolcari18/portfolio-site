@@ -43,6 +43,7 @@
   overflow-y: auto;
   margin-top: 40px;
   padding-bottom: 40px;
+  scroll-snap-type: y mandatory;
 }
 
 #menu {
@@ -59,4 +60,5 @@
 
 .view {
   height: 100%;
+  scroll-snap-align: start; 
 }
