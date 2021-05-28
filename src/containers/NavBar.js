@@ -1,19 +1,15 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
 
 // semantic ui
 import { Menu } from 'semantic-ui-react'
 
 const NavBar = () => {
 
-    const history = useHistory()
-
     const [active, setActive] = useState('Home')
 
     const handleClick = (e) => {
         setActive(e.target.innerText)
-        e.target.innerText === 'Home' ? history.push('/') : history.push(`/${e.target.innerText.toLowerCase()}`)
-        document.getElementById(`${e.target.innerText.toLowerCase()}_id`).scrollIntoView()
+        document.getElementById(`${e.target.innerText.toLowerCase()}_id`).scrollIntoView({behavior: 'smooth'})
     }
 
     return (
