@@ -12,7 +12,8 @@ const NavBar = () => {
 
     const handleClick = (e) => {
         setActive(e.target.innerText)
-        e.target.innerText === 'Home' ? history.push('/') :     history.push(`/${e.target.innerText.toLowerCase()}`)
+        e.target.innerText === 'Home' ? history.push('/') : history.push(`/${e.target.innerText.toLowerCase()}`)
+        document.getElementById(`${e.target.innerText.toLowerCase()}_id`).scrollIntoView()
     }
 
     return (

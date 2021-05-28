@@ -1,6 +1,6 @@
 import React from 'react'
 
-import NavBar from './NavBar'
+// containers
 import Greeting from './Greeting'
 import About from './About'
 import Portfolio from './Portfolio'

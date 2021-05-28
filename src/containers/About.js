@@ -4,7 +4,7 @@ import headshot from '../images/david-headshot.png'
 
 const About = () => {
     return (
-        <div className='view'>
+        <div className='view' id='about_id'>
             <div>
                 My name is David Polcari and I am a full-stack software engineer in Austin, Texas with a background in oil and gas and real estate lending. I am a self proclaimed efficiency enthusiast and love iteratively improving everything I do whether it's chores at home or projects at work. In my free time I enjoy watching sports, mountain biking and growing ridiculously hot peppers. 
             </div>
