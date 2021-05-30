@@ -5,7 +5,7 @@ import { Menu, Icon } from 'semantic-ui-react'
 
 const Footer = () => {
     return (
-        <Menu secondary fixed='bottom'>
+        <Menu fixed='bottom' id='footer'>
             <Icon name='github square' size='huge'/>
             <Icon name='linkedin' size='huge'/>
             <Icon name='medium' size='huge' />
