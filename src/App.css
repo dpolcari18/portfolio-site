@@ -50,11 +50,17 @@
   position: fixed;
   top: 0;
   left: 0;
+  justify-content: space-around;
 }
 
 #footer {
  position: fixed;
  bottom: 0;
+ justify-content: center;
+}
+
+#footer a{
+  color: inherit;
 }
 
 #headshot {
