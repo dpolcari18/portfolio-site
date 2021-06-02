@@ -43,8 +43,6 @@
   height: 100%;
   position: fixed;
   overflow-y: auto;
-  /* margin-top: 40px;
-  margin-bottom: 52px; */
   scroll-snap-type: y mandatory;
 }
 
@@ -82,13 +80,19 @@
 /* unique to different components */
 
 #headshot {
-  height: 745px;
-  width: 720px;
+  height: 637px;
+  width: 616px;
   border-radius: 50px;
 }
 
 
 #home_id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about_id {
   display: flex;
   align-items: center;
   justify-content: center;

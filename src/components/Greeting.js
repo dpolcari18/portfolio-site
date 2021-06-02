@@ -5,8 +5,7 @@ import { Container, Grid } from 'semantic-ui-react'
 
 const Greeting = () => {
     return (
-        <Container className='view' id='home_id' text='true'>
-            <Grid>
+            <Grid className='view' id='home_id'>
                 <Grid.Row columns={1} textAlign='center'>
                     <Grid.Column>                    
                         <h1>David Polcari</h1>
@@ -23,7 +22,6 @@ const Greeting = () => {
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
-        </Container>
     )
 }
 
