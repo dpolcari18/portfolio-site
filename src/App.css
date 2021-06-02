@@ -50,7 +50,13 @@
   position: fixed;
   top: 0;
   left: 0;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%
+}
+
+.ui.menu .item {
+  width: 10%;
+  justify-content: center;
 }
 
 #footer {
@@ -72,4 +78,5 @@
 .view {
   height: 100%;
   scroll-snap-align: start; 
+  padding-top: 20px;
 }
