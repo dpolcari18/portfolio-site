@@ -1,12 +1,14 @@
 import React from 'react'
 
 // containers
-import Greeting from './Greeting'
 import About from './About'
 import Portfolio from './Portfolio'
 import Blog from './Blog'
 import Contact from './Contact'
 import Resume from './Resume'
+
+// components
+import Greeting from '../components/Greeting'
 
 const Home = () => {
     return (

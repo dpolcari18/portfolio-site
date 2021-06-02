@@ -37,12 +37,14 @@
   }
 }
 
+/* universal */
+
 #main {
   height: 100%;
   position: fixed;
   overflow-y: auto;
-  margin-top: 40px;
-  margin-bottom: 52px;
+  /* margin-top: 40px;
+  margin-bottom: 52px; */
   scroll-snap-type: y mandatory;
 }
 
@@ -59,9 +61,17 @@
   justify-content: center;
 }
 
+.view {
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 56px;
+  scroll-snap-align: start; 
+}
+
 #footer {
  position: fixed;
  bottom: 0;
+ left: 0;
  justify-content: center;
 }
 
@@ -69,14 +79,21 @@
   color: inherit;
 }
 
+/* unique to different components */
+
 #headshot {
   height: 745px;
   width: 720px;
   border-radius: 50px;
 }
 
-.view {
-  height: 100%;
-  scroll-snap-align: start; 
-  padding-top: 20px;
+
+#home_id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home_id .column h1{
+  font-size: 400%;
 }
