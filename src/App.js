@@ -5,7 +5,9 @@ import 'semantic-ui-css/semantic.min.css'
 // Containers
 import Home from './containers/Home'
 import NavBar from './containers/NavBar'
-import Footer from './containers/Footer'
+
+// Components
+import Footer from './components/Footer'
 
 function App() {  
 
