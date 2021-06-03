@@ -66,6 +66,13 @@
   scroll-snap-align: start; 
 }
 
+.align_view {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
 #footer {
  position: fixed;
  bottom: 0;
@@ -75,9 +82,15 @@
 
 #footer a{
   color: inherit;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* unique to different components */
+
+#home_id .column h1{
+  font-size: 400%;
+}
 
 #headshot {
   height: 637px;
@@ -85,19 +98,12 @@
   border-radius: 50px;
 }
 
-
-#home_id {
+#about_text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#about_id {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#home_id .column h1{
-  font-size: 400%;
+#quote {
+  font-size: 2em;
 }

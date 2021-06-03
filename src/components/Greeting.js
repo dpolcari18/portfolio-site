@@ -1,11 +1,11 @@
 import React from 'react'
 
 // react-semantic
-import { Container, Grid } from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 
 const Greeting = () => {
     return (
-            <Grid className='view' id='home_id'>
+            <Grid className='view align_view' id='home_id'>
                 <Grid.Row columns={1} textAlign='center'>
                     <Grid.Column>                    
                         <h1>David Polcari</h1>
