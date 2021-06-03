@@ -14,7 +14,7 @@ const Resume = () => {
             <Grid.Row id='resume_row'>
                 <a href={file} download title='Click to Download PDF'>
                     <Document file={file}>
-                        <Page pageNumber={1} height={750} />
+                        <Page pageNumber={1} height={850} />
                     </Document>
                 </a>
             </Grid.Row>
