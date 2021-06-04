@@ -3,45 +3,46 @@ import React, { useState, useEffect } from 'react'
 const NavBar = () => {
 
     // local state
-    const [active, setActive] = useState('home_id')
+    // const [active, setActive] = useState('home_id')
     
     // observe elements
-    const observeEle = ['home_id', 'about_id', 'portfolio_id', 'blog_id', 'contact_id', 'skills_id']
+    // const observeEle = ['home_id', 'about_id', 'portfolio_id', 'blog_id', 'contact_id', 'skills_id']
 
+    // set active element on click
     const handleClick = (e) => {
-        debugger
-        setActive(e.target.innerText)
         document.getElementById(`${e.target.innerText.toLowerCase()}_id`).scrollIntoView({behavior: 'smooth'})
     }
 
-    const handleObserve = (el) => {
-        setActive(el[0].target.id)
-    }
+    // sets active link when listener triggers
+    // const handleObserve = (el) => {
+    //     setActive(el[0].target.id)
+    // }
 
-    useEffect (() => {
-        const options = {
-            root: null,
-            threshold: 0.6
-        }
+    // // listens for scroll event to set active link
+    // useEffect (() => {
+    //     const options = {
+    //         root: null,
+    //         threshold: 0.8
+    //     }
 
-        const observer = new IntersectionObserver((el) => handleObserve(el), options)
+    //     const observer = new IntersectionObserver((el) => handleObserve(el), options)
 
-        observeEle.forEach(element => observer.observe(document.getElementById(`${element}`)))
+    //     observeEle.forEach(element => observer.observe(document.getElementById(`${element}`)))
 
-        return (() => {
-            observeEle.forEach(element => observer.unobserve(document.getElementById(`${element}`)))
-        })
-    }, [])
+    //     return (() => {
+    //         observeEle.forEach(element => observer.unobserve(document.getElementById(`${element}`)))
+    //     })
+    // }, [])
 
     return (
         <nav id='menu'>
             <ul>
-                <li><a href='#home_id'>Home</a></li>
-                <li><a href='#about_id'>About</a></li>
-                <li><a href='#skills_id'>Skills</a></li>
-                <li><a href='#portfolio_id'>Portfolio</a></li>
-                <li><a href='#blog_id'>Blog</a></li>
-                <li><a href='#contact_id'>Contact</a></li>
+                <li><div onClick={(e) => handleClick(e, 'home_id')}>Home</div></li>
+                <li><div onClick={(e) => handleClick(e, 'about_id')}>About</div></li>
+                <li><div onClick={(e) => handleClick(e, 'skills_id')}>Skills</div></li>
+                <li><div onClick={(e) => handleClick(e, 'portfolio_id')}>Portfolio</div></li>
+                <li><div onClick={(e) => handleClick(e, 'blog_id')}>Blog</div></li>
+                <li><div onClick={(e) => handleClick(e, 'contact_id')}>Contact</div></li>
             </ul>    
         </nav>
         

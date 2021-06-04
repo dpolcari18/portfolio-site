@@ -56,14 +56,42 @@ nav ul li {
   float: left;
 }
 
-nav ul li a {
+nav ul li div {
   display: block;
   padding: 8px;
   background-color: white;
   color: black;
+  font-size: 1.2em;
+  font-weight: bolder;
 }
 
-nav ul li a:hover {
+nav ul li div:hover {
   background: rgb(190, 190, 190);
   color: white;
+  cursor: pointer;
+}
+
+#footer {
+  position: fixed;
+  overflow: hidden;
+  background-color: white;
+  bottom: 0; /* Position the footer at the bottom of the page */
+  width: 100%; /* Full width */
+}
+
+#footer a{
+  color: inherit;
+}
+
+#main {
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  margin-top: 40px;
+}
+
+.view {
+  height: 100%;
+  scroll-snap-align: start;
 }

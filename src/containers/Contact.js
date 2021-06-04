@@ -1,7 +1,4 @@
-import React, {useState} from 'react'
-
-// react-semantic
-import { Form, Grid } from 'semantic-ui-react'
+import React from 'react'
 
 // component
 import Image from '../components/Image'
@@ -11,18 +8,15 @@ import headshot from '../images/david-square-headshot.png'
 
 const Contact = () => {
 
-    // local state
-    const [email, setEmail] = useState('')
-    const [subject, setSubject] = useState('')
-    const [body, setBody] = useState('')
-
     return (
-        <div id='contact_id'>
+        <div id='contact_id' className='view'>
             <Image src={headshot} alt='Second headshot of David' id='contact_image' />
             <table>
                 <thead>
                     <tr>
-                        Contact Information
+                        <td>
+                            Contact Information
+                        </td>
                     </tr>
                 </thead>
                 <tbody>
