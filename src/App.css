@@ -96,6 +96,7 @@ nav ul li div:hover {
   align-content: center;
   height: 100%;
   scroll-snap-align: start;
+  padding-bottom: 56px;
 }
 
 /* Image Scaling */
