@@ -7,7 +7,7 @@ import BlogPost from '../components/BlogPost'
 const Blog = () => {
 
     return (
-        <div className='view' id='blog_id'>
+        <div id='blog_id'>
             <BlogPost />
         </div>
     )

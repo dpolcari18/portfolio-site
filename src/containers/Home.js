@@ -5,7 +5,7 @@ import About from '../components/About'
 import Portfolio from './Portfolio'
 import Blog from './Blog'
 import Contact from './Contact'
-import Resume from './Resume'
+import Skills from './Skills'
 
 // components
 import Greeting from '../components/Greeting'
@@ -15,10 +15,10 @@ const Home = () => {
         <div id='main'>
             <Greeting />
             <About />
+            <Skills />
             <Portfolio />
             <Blog />
             <Contact />
-            <Resume />
         </div>
     )
 }
