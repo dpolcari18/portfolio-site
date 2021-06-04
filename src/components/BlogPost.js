@@ -14,14 +14,17 @@ const BlogPost = ({ blog }) => {
     }
 
     return (
-        <a href={blog.link} target='_blank' className='blog-card' style={{backgroundImage: `url(${blog.thumbnail})`}} >
-            <div>
-                <h1>{blog.title}</h1>
-                <div className='date'>{convertDate()}</div>
-            </div>
-            <img src={blog.thumbnail} alt='blog post thumbnail'/>
-            {blog.pubDate}
-        </a>
+        <div className='card-grid-space'>
+            <a href={blog.link} title={`Click to read ${blog.title}!`} target='_blank' rel='noreferrer' className='card' style={{backgroundImage: `url(${blog.thumbnail})`}}>
+                <div>
+                    <h1>{blog.title}</h1>
+                    <div className='date'>{convertDate()}</div>
+                    <div className='tags'>
+                        {blog.categories.map(tag => <div className='tag'>{tag}</div>)}                    
+                    </div>
+                </div>
+            </a>
+        </div>
     )
 }
 
