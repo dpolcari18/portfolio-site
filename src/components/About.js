@@ -13,7 +13,7 @@ const About = () => {
         <Grid className='view align_view' id='about_id'>
             <Grid.Row columns={2} textAlign='center'>
                 <Grid.Column id='about_text' width='6'>
-                    My name is David Polcari and I am a full-stack software engineer in Austin, Texas with a background in oil and gas and real estate lending. I am a self proclaimed efficiency enthusiast and love iteratively improving everything I do whether it's chores at home or projects at work. Self driven, entrepreneur, whose hobbies include watching sports, mountain biking and growing ridiculously hot peppers. 
+                    <p>My name is David Polcari and I am a full-stack software engineer in Austin, Texas with a background in oil and gas and real estate lending. I am a self proclaimed efficiency enthusiast and love iteratively improving everything I do whether it's chores at home or projects at work. Self driven, entrepreneur, whose hobbies include watching sports, mountain biking and growing ridiculously hot peppers.</p> 
                 </Grid.Column>
                 <Grid.Column width='6'>
                     <Image src={headshot} alt='Professional head shot of David' id='headshot'/>

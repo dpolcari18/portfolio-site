@@ -1,7 +1,10 @@
 import React, {useState} from 'react'
 
 // react-semantic
-import { Form, Grid } from 'semantic-ui-react'
+import { Form, Grid, Image } from 'semantic-ui-react'
+
+// headshot
+import headshot from '../images/david-square-headshot.png'
 
 const Contact = () => {
 
@@ -14,7 +17,41 @@ const Contact = () => {
         <Grid className='view align_view' id='contact_id'>
             <Grid.Row>
                 <Grid.Column width='5'>
-
+                    <Image src={headshot} alt='Second headshot of David' id='contact_image' />
+                    <table>
+                        <thead>
+                            <th>
+                                Contact Information
+                            </th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    David Polcari
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    dpolcari18@gmail.com
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    LinkedIn
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    GitHub
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Medium
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </Grid.Column>
                 <Grid.Column width='5'>            
                     <Form widths='equal'>
@@ -29,10 +66,10 @@ const Contact = () => {
                                     value={subject}
                                     onChange={(e) => setSubject(e.target.value)}/>
                         <Form.TextArea fluid 
-                                    label='Body' 
-                                    placeholder='What do you want to say?' 
-                                    value={body}
-                                    onChange={(e) => setBody(e.target.value)}/>
+                                       label='Body' 
+                                       placeholder='What do you want to say?' 
+                                       value={body}
+                                       onChange={(e) => setBody(e.target.value)}/>
                         <Form.Button>Send</Form.Button>
                     </Form>
                 </Grid.Column>        
